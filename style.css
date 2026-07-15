@@ -124,17 +124,24 @@ body {
 }
 
 .song-card {
-    max-width: 600px;
-    margin: 0 auto;   /* จัดให้อยู่กลาง */
+    width: 90%;          /* กว้างเกือบเต็มจอ */
+    max-width: 900px;    /* ใหญ่สุด */
+    margin: 0 auto;      /* อยู่กลาง */
     background: #f4f1ea;
-    padding: 15px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.song-card iframe {
+    width: 100%;
+    height: 500px;   /* ⭐ เพิ่มความสูง */
+    border: none;
     border-radius: 10px;
 }
 
-/* ✅ YouTube ขนาดพอดี + สี่เหลี่ยม */
 .song-card iframe {
     width: 100%;
-    aspect-ratio: 16 / 9; /* ทำให้เป็นสี่เหลี่ยมสวย */
+    aspect-ratio: 16 / 9;   /* ⭐ สวยสุด */
     border: none;
     border-radius: 10px;
 }
