@@ -70,12 +70,12 @@ body {
     position: relative;
 }
 
-/* ชื่อ */
 .name {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    font-size: 22px; /* เพิ่มความเด่น */
+    gap: 8px;
+    text-align: center;
 }
 
 /* รูปหน้าชื่อ */
