@@ -30,26 +30,31 @@ body {
     align-items: center;
     background: #f4f1ea;
     margin: 30px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px; /* เพิ่ม */
+    border-radius: 15px;
+    gap: 20px;
 }
 
+/* ✅ รูปโปรไฟล์ใหญ่ขึ้น + ไม่ยืด */
 .avatar {
-    width: 80px;
-    border-radius: 10px;
-    margin-right: 15px;
+    width: 140px;   /* เพิ่มจาก 80 */
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
+/* ชื่อ */
 .name {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 22px; /* เพิ่มความเด่น */
 }
 
 /* รูปหน้าชื่อ */
 .name-icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 /* TITLE */
@@ -59,7 +64,7 @@ body {
     padding-left: 10px;
 }
 
-/* GRID แบบโปสเตอร์ */
+/* GRID */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -92,10 +97,11 @@ body {
     border-radius: 5px;
 }
 
-/* Image */
+/* ✅ รูปไม่ยืด */
 .card img {
     width: 100%;
     height: 200px;
+    object-fit: cover; /* สำคัญมาก */
     background: #ddd;
     border-radius: 5px;
 }
@@ -109,22 +115,26 @@ body {
     color: gray;
     font-size: 13px;
 }
+
 /* SONG SECTION */
 .song-container {
     padding: 30px;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* จัดเป็นช่อง */
     gap: 20px;
 }
 
 .song-card {
     background: #f4f1ea;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
 }
 
+/* ✅ YouTube ขนาดพอดี + สี่เหลี่ยม */
 .song-card iframe {
     width: 100%;
-    height: 250px;
+    aspect-ratio: 16 / 9; /* ทำให้เป็นสี่เหลี่ยมสวย */
+    border: none;
     border-radius: 10px;
 }
 
@@ -160,11 +170,4 @@ button:hover {
     border-radius: 10px;
     transition: 0.5s;
     z-index: 999;
-}
-
-.song-card iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 10px;
 }
