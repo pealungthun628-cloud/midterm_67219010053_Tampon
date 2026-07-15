@@ -35,12 +35,12 @@ body {
     gap: 20px;
 }
 
-/* ✅ รูปโปรไฟล์ใหญ่ขึ้น + ไม่ยืด */
 .avatar {
-    width: 140px;   /* เพิ่มจาก 80 */
+    width: 140px;
     height: 140px;
-    object-fit: cover;
-    border-radius: 15px;
+    object-fit: cover;   /* ครอปรูปไม่ให้ยืด */
+    border-radius: 50%;  /* ⭐ ทำให้เป็นวงกลม */
+    margin-right: 15px;
 }
 
 /* ชื่อ */
@@ -53,8 +53,8 @@ body {
 
 /* รูปหน้าชื่อ */
 .name-icon {
-    width: 30px;
-    height: 30px;
+    width: 140px;
+    height: 140px;
 }
 
 /* TITLE */
