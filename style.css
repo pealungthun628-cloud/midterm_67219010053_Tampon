@@ -145,8 +145,8 @@ body {
 }
 
 .song-container {
-    display: flex;
-    flex-direction: column;  /* ⭐ เรียงแนวตั้ง */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ⭐ แถวละ 2 */
     gap: 20px;
     padding: 30px;
 }
@@ -171,6 +171,12 @@ body {
     aspect-ratio: 16 / 9;   /* ⭐ สวยสุด */
     border: none;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .song-container {
+        grid-template-columns: 1fr; /* มือถือเหลือ 1 */
+    }
 }
 
 /* BUTTON */
