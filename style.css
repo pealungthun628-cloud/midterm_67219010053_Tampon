@@ -43,18 +43,18 @@ body {
     margin-right: 15px;
 }
 
-/* ⭐ กล่องชื่อ + พื้นหลัง */
 .profile-box {
-    background-image: url('ddd.jpg'); /* ใส่รูปพื้นหลัง */
-    background-size: cover;
-    background-position: center;
+    background-image: url('ddd.jpg');
+    background-size: cover;       /* ⭐ เต็มกรอบ */
+    background-position: center;  /* จัดกลาง */
+    background-repeat: no-repeat;
 
     padding: 20px;
     border-radius: 15px;
 
     color: white;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;             /* ⭐ กันล้น */
 }
 
 /* ทำให้ตัวหนังสืออ่านง่าย */
