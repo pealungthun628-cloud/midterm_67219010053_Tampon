@@ -43,6 +43,33 @@ body {
     margin-right: 15px;
 }
 
+/* ⭐ กล่องชื่อ + พื้นหลัง */
+.profile-box {
+    background-image: url('ddd.jpg'); /* ใส่รูปพื้นหลัง */
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+    border-radius: 15px;
+
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ทำให้ตัวหนังสืออ่านง่าย */
+.profile-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* เงาทับ */
+}
+
+/* ให้ข้อความอยู่บน overlay */
+.profile-box * {
+    position: relative;
+}
+
 /* ชื่อ */
 .name {
     display: flex;
